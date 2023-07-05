@@ -19,6 +19,7 @@ header {
     align-items: center;
     position: fixed;
     z-index: 1;
+    box-shadow: #180122 0px 0px 11px 0px;
 }
 .header-stripe nav {
 
