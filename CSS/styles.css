@@ -14,7 +14,7 @@ header {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     background-color: var(--color2);
     align-items: center;
     position: fixed;
@@ -36,7 +36,7 @@ header {
     list-style: none;
     /* padding: 0rem 0.5rem; */
     /* margin: 8rem; */
-    height: 1vh;
+    height: 3vh;
   }
   header nav li {
     margin: 0 2rem;
@@ -174,6 +174,44 @@ body.dark-mode {
     width: 2.5rem;
     height: 2.5rem;
     margin: 1rem;
+}
+
+button {
+    --purple: #b21bfd;
+    font-size: 17px;
+    padding: 0.6em 1.7em 0.9em;
+    margin-right: 20px;
+    letter-spacing: 1m;
+    position: relative;
+    font-family: Georgia, 'Times New Roman';
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 0.4em;
+    border: 1px solid var(--purple);
+    background: linear-gradient(to right, rgba(230, 27, 253, 0.1) 1%, transparent 40%,transparent 60% , rgba(208, 27, 253, 0.1) 100%);
+    color: var(--purple);
+    box-shadow: inset 0 0 10px rgba(163, 27, 253, 0.6), 0 0 9px 3px rgba(219, 27, 253, 0.2);
+  }
+  
+  button:hover {
+    color: #b21bfd;
+    box-shadow: inset 0 0 10px rgba(163, 27, 253, 0.6), 0 0 9px 3px rgba(219, 27, 253, 0.2);
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(170, 27, 253, 0.1) 40%,rgba(208, 27, 253, 0.1) 60% , transparent 100%);
+  }
+  
+  button:hover:before {
+    transform: translateX(15em);
 }
 
 .titulo{
