@@ -20,19 +20,21 @@ function switchDarkMode() {
     document.body.classList.toggle('dark-mode');
     const darkModeSwitch = document.querySelector('#dark-mode-switch');
     if (document.body.classList.contains('dark-mode')) {
-      darkModeSwitch.innerHTML = '🌚 🕯️ 🌃';
+      darkModeSwitch.nextElementSibling.style.backgroundColor = "#000";
+      darkModeSwitch.nextElementSibling.querySelector('span').style.backgroundColor = "#fff";
     } else {
-      darkModeSwitch.innerHTML = '🌞 🌈 🌇';
+      darkModeSwitch.nextElementSibling.style.backgroundColor = "#2e2e2e";
+      darkModeSwitch.nextElementSibling.querySelector('span').style.backgroundColor = "#4e4";
     }
   }
-
+  
   window.onload = function() {
     const articlesSection = document.querySelector('#articles');
     const cvSection = document.querySelector('#cv');
     
     articlesSection.style.display = 'none';
     cvSection.style.display = 'none';
-};
+  };
 
 const panels = document.querySelectorAll('.panel');
 
