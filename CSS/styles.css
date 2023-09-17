@@ -249,6 +249,7 @@ img:hover {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-bottom: 25px;
 }
 #social-media {
     display: flex;
