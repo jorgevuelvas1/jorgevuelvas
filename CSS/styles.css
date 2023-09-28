@@ -154,7 +154,7 @@ body {
     padding: 0;
 }
 :root {
-    --color1: #e9e0ff;
+    --color1: #f5f5f5;
     --color2: #474646;
     --color3: #b2b2b2;
     --color4: #5e5e5e;
@@ -412,6 +412,10 @@ footer {
     background-color: var(--color2);
     padding: 1rem;
     font-size: 1.3rem;
+}
+#footer-write {
+    color: #f5f5f5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
