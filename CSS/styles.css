@@ -141,7 +141,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-family: Georgia, 'Times New Roman';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--color1);
     color: var(--color5);
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -154,8 +154,8 @@ body {
     padding: 0;
 }
 :root {
-    --color1: #f2f2f2;
-    --color2: #dcdcdc;
+    --color1: #e9e0ff;
+    --color2: #474646;
     --color3: #b2b2b2;
     --color4: #5e5e5e;
     --color5: #140116;
@@ -183,7 +183,7 @@ button {
     margin-right: 20px;
     letter-spacing: 1m;
     position: relative;
-    font-family: Georgia, 'Times New Roman';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 0.6em;
     overflow: hidden;
     transition: all 0.3s;
@@ -249,7 +249,7 @@ img:hover {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-bottom: 25px;
+    margin-bottom: 75px; 
 }
 #social-media {
     display: flex;
@@ -420,6 +420,7 @@ footer {
     margin: 0 auto; /* Esto centrará el contenedor en la página */
     justify-content: center; /* Esto centrará los elementos hijos horizontalmente */
     align-items: center;
+    margin-bottom: 75px;
   }
   
   .panel {
